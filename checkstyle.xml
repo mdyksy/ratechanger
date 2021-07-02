@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE module PUBLIC "-//Puppy Crawl//DTD Check Configuration 1.1//EN"
+        "http://www.puppycrawl.com/dtds/configuration_1_1.dtd">
+
+<!-- commons math customization of default Checkstyle behavior -->
+<module name="Checker">
+    <property name="localeLanguage" value="en"/>
+
+    <module name="LineLength">
+        <property name="max" value="160"/>
+    </module>
+    <module name="FileLength">
+        <property name="max" value="350"/>
+    </module>
+
+    <module name="TreeWalker">
+        <module name="MissingOverride"/>
+
+        <module name="EmptyBlock"/>
+        <module name="NeedBraces"/>
+
+        <module name="FinalClass"/>
+
+        <module name="RedundantImport"/>
+        <module name="UnusedImports"/>
+
+        <module name="RedundantModifier"/>
+        <module name="ModifierOrder"/>
+
+        <module name="DeclarationOrder"/>
+        <module name="OneStatementPerLine"/>
+        <module name="VariableDeclarationUsageDistance"/>
+        <module name="SimplifyBooleanExpression"/>
+        <module name="SimplifyBooleanReturn"/>
+        <module name="NestedForDepth"/>
+        <module name="MultipleVariableDeclarations"/>
+        <module name="NestedIfDepth">
+            <property name="max" value="2"/>
+        </module>
+
+        <module name="ConstantName"/>
+
+        <module name="ParameterNumber"/>
+        <module name="MethodLength">
+            <property name="max" value="60"/>
+        </module>
+        <module name="LambdaBodyLength">
+            <property name="max" value="15"/>
+        </module>
+
+        <module name="EmptyLineSeparator">
+            <property name="allowMultipleEmptyLines" value="false"/>
+            <property name="allowNoEmptyLineBetweenFields " value="true"/>
+        </module>
+    </module>
+</module>

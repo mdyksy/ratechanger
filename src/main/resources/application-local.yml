@@ -1,0 +1,24 @@
+server:
+  port: 8443
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:test
+    driverClassName: org.h2.Driver
+    username: sa
+    password: password
+  h2:
+    console:
+      enabled: true
+
+logging:
+  level:
+    org.hibernate.SQL: TRACE
+
+hibernate:
+  hbm2ddl:
+    auto: create-drop
+
+exchange-rates-api:
+  baseUrl: http://api.exchangeratesapi.io/v1/
+  apiKey: cd648d73f248487c9f55c830d6356927
